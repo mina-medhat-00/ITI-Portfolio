@@ -1,0 +1,118 @@
+@import url("https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro");
+
+:root {
+  --background-color: #f5f5f5;
+  --dark-grey: #4e4e4e;
+  --grey: #9f9f9f;
+  --light-grey: #c4c4c4;
+  --black: #000000;
+  --white: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+  font-size: 16px;
+  color: var(--black);
+  background-color: var(--background-color);
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-weight: inherit;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  font-size: inherit;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+input,
+select,
+textarea {
+  padding: 0.25rem;
+  font-size: 1.15rem;
+  border: 2px solid var(--dark-grey);
+  background-color: var(--white);
+}
+
+textarea {
+  resize: none;
+  display: block;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--grey);
+}
+
+section {
+  width: 100%;
+}
+
+nav,
+footer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  padding-bottom: 1.75rem;
+}
+
+footer {
+  width: 100%;
+  border-top: 2px solid var(--black);
+  font-size: 0.75rem;
+}
+
+nav ul,
+footer ul {
+  margin-left: auto;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+}
+
+.nav_links_container a {
+  text-decoration: none;
+}
+
+.copyright_container p {
+  margin-left: 1rem;
+}
