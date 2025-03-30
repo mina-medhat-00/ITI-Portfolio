@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Portfolio</title>
   </head>
   <body>
@@ -19,7 +26,134 @@
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <!-- five -->
+      <div class="section_breaker"></div>
+      <section id="section_five">
+        <h2 class="section_title">Say Hello</h2>
+        <hr class="horizontal_border" />
+        <div class="contact_container">
+          <div class="contact_description">
+            <p class="large_text">
+              Looking to start a new project or just want to say hi? Send me an
+              email and I'll do my best to reply within 24 hrs!
+            </p>
+            <p class="large_text">
+              If contact forms aren't your thing... send me an email at
+              <a href="#">hello@arnau.design</a>
+            </p>
+          </div>
+          <form class="contact_form">
+            <div class="field_group_container">
+              <div class="field_group">
+                <label for="first-name">First Name*</label>
+                <input
+                  type="text"
+                  id="first-name"
+                  name="first-name"
+                  placeholder="First Name"
+                  required
+                />
+              </div>
+              <div class="field_group">
+                <label for="last-name">Last Name</label>
+                <input
+                  type="text"
+                  id="last-name"
+                  name="last-name"
+                  placeholder="Last Name"
+                />
+              </div>
+              <div class="field_group">
+                <label for="inquiry">Inquiry*</label>
+                <select id="inquiry" name="inquiry">
+                  <option value="collab">Collab</option>
+                  <option value="client">Client</option>
+                </select>
+              </div>
+              <div class="field_group">
+                <label for="email">Email*</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="hello@arnau.design"
+                  required
+                />
+              </div>
+            </div>
+            <label for="message">Message*</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Hello"
+              rows="6"
+              required
+            ></textarea>
+            <button>Send</button>
+          </form>
+        </div>
+      </section>
+      <!-- six -->
+      <div class="section_breaker"></div>
+      <hr class="horizontal_border" />
+      <section id="section_six">
+        <p class="large_text">Recent Blogs</p>
+        <div class="blog_container">
+          <div class="blog">
+            <p class="medium_text">
+              The ULTIMATE Figma UI Kit (Tailwind Figma)
+            </p>
+            <p class="small_text">24.09.21</p>
+            <p class="medium_text"><a href="#">See Now</a></p>
+          </div>
+          <div class="blog mid_blog">
+            <p class="medium_text">
+              The ULTIMATE Figma UI Kit (Tailwind Figma)
+            </p>
+            <p class="small_text">24.09.21</p>
+            <p class="medium_text">
+              <a href="#">See Now</a>
+            </p>
+          </div>
+          <div class="blog">
+            <p class="medium_text">
+              The ULTIMATE Figma UI Kit (Tailwind Figma)
+            </p>
+            <p class="small_text">24.09.21</p>
+            <p class="medium_text"><a href="#">See Now</a></p>
+          </div>
+        </div>
+      </section>
+      <!-- seven -->
+      <div class="section_breaker"></div>
+      <img class="separator" src="assets/images/zigzag.png" alt="separator" />
+      <section id="section_seven">
+        <p class="large_text">Join the Newsletter!</p>
+        <div class="newsletter_container">
+          <p class="medium_text">
+            You'll receive an email every once in a while about new products,
+            courses, and videos!
+          </p>
+          <form class="newsletter_form">
+            <input
+              type="email"
+              id="newsletter-email"
+              name="newsletter-email"
+              placeholder="name@example.com"
+              required
+            />
+            <button type="submit">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </form>
+          <p class="small_text">
+            We'll never share your details. See our
+            <a href="#">Privacy Policy</a>
+          </p>
+        </div>
+      </section>
+    </main>
     <footer>
       <img class="logo" src="./assets/images/logo.png" alt="logo" />
       <div class="copyright_container">
