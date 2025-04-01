@@ -152,6 +152,26 @@ footer ul {
   font-size: 0.75rem;
 }
 
+/* hero */
+.hero_container {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.hero_text {
+  color: var(--dark-grey);
+  width: 60%;
+  margin-right: -100px;
+}
+
+.hero_image {
+  width: 50%;
+  height: auto;
+  z-index: -1;
+}
+
 /* section 1 */
 .projects_container {
   align-items: center;
