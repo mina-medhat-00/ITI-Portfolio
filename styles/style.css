@@ -117,6 +117,17 @@ footer ul {
   margin-left: 1rem;
 }
 
+.horizontal_border {
+  color: var(--black);
+  width: 85%;
+  margin: 0 auto;
+}
+
+.section_breaker {
+  height: 100px;
+  width: 100%;
+}
+
 /* text */
 .section_title {
   font-size: 2.25rem;
@@ -139,6 +150,48 @@ footer ul {
 }
 .small_text {
   font-size: 0.75rem;
+}
+
+/* section 1 */
+.projects_container {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.project_image {
+  aspect-ratio: 0.65;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* section 2 */
+.content_creation_container,
+.projects_container {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+
+.content_creation_description {
+  width: 45%;
+  padding-right: 1.5rem;
+}
+
+.intro_video_container {
+  width: 55%;
+}
+
+.intro_video_container iframe {
+  aspect-ratio: 1.75;
+  border-radius: 12px;
 }
 
 /* section 3 */
