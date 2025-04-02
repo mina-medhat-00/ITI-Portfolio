@@ -104,6 +104,14 @@ footer ul {
   gap: 12px;
 }
 
+footer ul li {
+  font-size: 1.5rem;
+}
+
+nav button:hover {
+  text-decoration: underline;
+}
+
 .logo {
   width: 30px;
   height: auto;
@@ -188,6 +196,11 @@ footer ul {
   flex-direction: column;
 }
 
+.project a {
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+}
+
 .project_image {
   aspect-ratio: 1.5;
   object-fit: cover;
@@ -224,9 +237,19 @@ footer ul {
   padding-left: 1.5rem;
 }
 
+.service_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .services_container p,
 .services_horizontal_border {
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.service_description {
+  display: none;
 }
 
 .services_horizontal_border {
@@ -247,8 +270,18 @@ footer ul {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   width: 100%;
+  overflow: hidden;
+}
+
+.skill_container ul li {
+  padding: 0 2.5rem;
+  border-right: 1px solid var(--black);
+}
+
+.skill_container ul li:last-child {
+  border: none;
 }
 
 /* section 3 */
@@ -381,4 +414,20 @@ footer ul {
   color: var(--white);
   box-sizing: content-box;
   padding: 0 1.25rem;
+}
+
+/* submission page */
+#submission_section {
+  padding: 2.5rem 0;
+}
+
+#submission_footer {
+  position: fixed;
+  bottom: 0;
+}
+
+.submission_description {
+  width: 85%;
+  margin: 0 auto;
+  padding: 4rem 0;
 }

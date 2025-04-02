@@ -19,10 +19,18 @@
       <nav>
         <img class="logo" src="./assets/images/logo.png" alt="logo" />
         <ul class="nav_links_container">
-          <li><a class="medium_text" href="#">Work</a></li>
-          <li><a class="medium_text" href="#">About</a></li>
-          <li><a class="medium_text" href="#">Contact</a></li>
-          <li><a class="medium_text" href="#">Other</a></li>
+          <li>
+            <button class="medium_text" id="section_one_btn">Projects</button>
+          </li>
+          <li>
+            <button class="medium_text" id="section_two_btn">About</button>
+          </li>
+          <li>
+            <button class="medium_text" id="section_four_btn">Contact</button>
+          </li>
+          <li>
+            <button class="medium_text" id="section_five_btn">Blogs</button>
+          </li>
         </ul>
       </nav>
     </header>
@@ -48,7 +56,9 @@
         <hr class="horizontal_border" />
         <div class="projects_container">
           <div class="project">
-            <p class="large_text">E-Commerce</p>
+            <a href="https://www.github.com" target="_blank"
+              ><p class="medium_text">E-Commerce</p></a
+            >
             <img
               class="project_image"
               src="./assets/images/project01.png"
@@ -56,7 +66,9 @@
             />
           </div>
           <div class="project">
-            <p class="large_text">Project Management System</p>
+            <a href="https://www.github.com" target="_blank"
+              ><p class="medium_text">Project Management System</p></a
+            >
             <img
               class="project_image"
               src="./assets/images/project02.png"
@@ -64,7 +76,9 @@
             />
           </div>
           <div class="project">
-            <p class="large_text">Landing Page</p>
+            <a href="https://www.github.com" target="_blank">
+              <p class="medium_text">Landing Page</p></a
+            >
             <img
               class="project_image"
               src="./assets/images/project03.png"
@@ -97,30 +111,53 @@
           </div>
           <div class="services_container">
             <p class="large_text">Your one stop shop:</p>
-            <p class="large_text">①Custom Web Design & Development</p>
+            <div class="service_title">
+              <p class="large_text">① Custom Web Design & Development</p>
+              <button id="service_one_btn">
+                <i class="fa-solid fa-angle-down"></i>
+              </button>
+            </div>
             <hr class="services_horizontal_border" />
-            <p class="large_text">②Website Maintenance & Optimization</p>
+            <p class="service_description" id="service_one_text">
+              Transform your vision into a user friendly, high-performance
+              website tailored to your brand. Creating custom and responsive
+              websites that engage visitors.
+            </p>
+            <div class="service_title">
+              <p class="large_text">② Website Maintenance & Optimization</p>
+              <button id="service_two_btn">
+                <i class="fa-solid fa-angle-down"></i>
+              </button>
+            </div>
             <hr class="services_horizontal_border" />
-            <p class="large_text">③E-commerce & Web App Solutions</p>
+            <p class="service_description" id="service_two_text">
+              Keep your website running smoothly, securely, and efficiently with
+              maintenance and performance optimization. Handling everything from
+              security updates to speed enhancements.
+            </p>
+            <div class="service_title">
+              <p class="large_text">③ E-commerce & Web App Solutions</p>
+              <button id="service_three_btn">
+                <i class="fa-solid fa-angle-down"></i>
+              </button>
+            </div>
             <hr class="services_horizontal_border" />
+            <p class="service_description" id="service_three_text">
+              Build an online store or custom web application designed for
+              growth and scalability. Get secure, high-converting e-commerce
+              platforms and web apps that enhance user engagement.
+            </p>
           </div>
         </div>
         <div class="skill_container">
           <ul>
             <li class="medium_text">Node.js</li>
-            <li class="medium_text">•</li>
             <li class="medium_text">Typescript</li>
-            <li class="medium_text">•</li>
             <li class="medium_text">MySQL</li>
-            <li class="medium_text">•</li>
             <li class="medium_text">MongoDB</li>
-            <li class="medium_text">•</li>
             <li class="medium_text">Github</li>
-            <li class="medium_text">•</li>
             <li class="medium_text">React</li>
-            <li class="medium_text">•</li>
             <li class="medium_text">AWS</li>
-            <li class="medium_text">•</li>
             <li class="medium_text">Docker</li>
           </ul>
         </div>
@@ -131,20 +168,15 @@
         <h2 class="section_title">What Clients Say</h2>
         <hr class="horizontal_border" />
         <div class="quotes_container">
-          <button class="quote_button">
+          <button class="quote_button" id="quote_button_left">
             <i class="fa-solid fa-angle-left"></i>
           </button>
           <div class="quote">
-            <p class="large_text">
-              “I hired Mina again for additional web development work, and he
-              exceeded expectations. He's detail-oriented, creative, and
-              delivers high-quality results on time. Highly recommend working
-              with him!”
-            </p>
-            <p class="large_text">- Adam Smith</p>
+            <p class="large_text" id="quote_text"></p>
+            <p class="large_text" id="quote_author"></p>
             <p class="large_text"><i>Client</i></p>
           </div>
-          <button class="quote_button">
+          <button class="quote_button" id="quote_button_right">
             <i class="fa-solid fa-angle-right"></i>
           </button>
         </div>
@@ -152,7 +184,7 @@
       <!-- four -->
       <div class="section_breaker"></div>
       <section id="section_four">
-        <h2 class="section_title">Say Hello</h2>
+        <h2 class="section_title">Contact Me</h2>
         <hr class="horizontal_border" />
         <div class="contact_container">
           <div class="contact_description">
@@ -170,7 +202,7 @@
               >
             </p>
           </div>
-          <form action="submit" target="_blank" class="contact_form">
+          <form action="submission.html" target="_blank" class="contact_form">
             <div class="field_group_container">
               <div class="field_group">
                 <label for="first-name">First Name*</label>
@@ -279,7 +311,11 @@
             updates in web development. Get exclusive insights on new projects,
             courses, and videos delivered straight to your inbox!
           </p>
-          <form action="submit" target="_blank" class="newsletter_form">
+          <form
+            action="submission.html"
+            target="_blank"
+            class="newsletter_form"
+          >
             <input
               type="email"
               id="newsletter-email"
@@ -302,7 +338,7 @@
       <ul>
         <li>
           <a href="https://github.com/mina-medhat-00" target="_blank"
-            ><i class="fa-brands fa-github"></i
+            ><i class="fa-brands fa-square-github"></i
           ></a>
         </li>
         <li>
@@ -312,10 +348,11 @@
         </li>
         <li>
           <a href="https://www.facebook.com/mina.medhat.3141" target="_blank"
-            ><i class="fa-brands fa-facebook-f"></i
+            ><i class="fa-brands fa-square-facebook"></i
           ></a>
         </li>
       </ul>
     </footer>
+    <script src="./js/script.js"></script>
   </body>
 </html>
