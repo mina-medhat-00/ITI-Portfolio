@@ -85,7 +85,7 @@ footer {
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 1rem;
+  padding: 1rem 2rem;
   padding-bottom: 1.75rem;
 }
 
@@ -105,7 +105,7 @@ footer ul {
 }
 
 .logo {
-  width: 50px;
+  width: 30px;
   height: auto;
 }
 
@@ -138,18 +138,22 @@ footer ul {
 
 .x_large_text {
   font-size: 3rem;
+  font-weight: 500;
 }
 
 .large_text {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: 500;
   margin-bottom: 1rem;
 }
 .medium_text {
   font-size: 1.15rem;
+  font-weight: 500;
 }
+
 .small_text {
   font-size: 0.75rem;
+  font-weight: 400;
 }
 
 /* hero */
@@ -185,13 +189,11 @@ footer ul {
 }
 
 .project_image {
-  aspect-ratio: 0.65;
+  aspect-ratio: 1.5;
   object-fit: cover;
   border-radius: 12px;
 }
 
-/* section 2 */
-.content_creation_container,
 .projects_container {
   width: 85%;
   margin: 0 auto;
@@ -200,21 +202,7 @@ footer ul {
   margin-top: 3rem;
 }
 
-.content_creation_description {
-  width: 45%;
-  padding-right: 1.5rem;
-}
-
-.intro_video_container {
-  width: 55%;
-}
-
-.intro_video_container iframe {
-  aspect-ratio: 1.75;
-  border-radius: 12px;
-}
-
-/* section 3 */
+/* section 2 */
 .about_me_container {
   width: 85%;
   margin: 3rem auto;
@@ -261,10 +249,9 @@ footer ul {
   align-items: center;
   justify-content: space-around;
   width: 100%;
-  list-style: disc;
 }
 
-/* section 4 */
+/* section 3 */
 .quotes_container {
   width: 85%;
   margin: 0 auto;
@@ -290,7 +277,7 @@ footer ul {
   overflow: hidden;
 }
 
-/* section 5 */
+/* section 4 */
 .contact_container {
   width: 85%;
   margin: 3rem auto;
@@ -339,9 +326,9 @@ footer ul {
   width: 95%;
 }
 
-/* section 6 */
-#section_six,
-#section_seven {
+/* section 5 */
+#section_five,
+#section_six {
   text-align: center;
   padding: 2.5rem 0;
 }
@@ -367,7 +354,7 @@ footer ul {
   border-right: 2px solid var(--black);
 }
 
-/*section 7*/
+/*section 6*/
 .separator {
   width: 100%;
   height: 10px;
