@@ -416,6 +416,18 @@ nav button:hover {
   padding: 0 1.25rem;
 }
 
+/* scroll up button */
+#scroll_up_btn {
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--black);
+  border-radius: 50%;
+  background-color: var(--background-color);
+}
+
 /* submission page */
 #submission_section {
   padding: 2.5rem 0;
@@ -525,5 +537,12 @@ nav button:hover {
 
   .newsletter_form button {
     width: 5%;
+  }
+
+  #scroll_up_btn {
+    width: 25px;
+    height: 25px;
+    bottom: 65px;
+    right: 20px;
   }
 }

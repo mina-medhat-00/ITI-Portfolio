@@ -84,3 +84,11 @@ $quoteBtnRight.addEventListener("click", () => {
   $quoteText.textContent = quotes[index].text;
   $quoteAuthor.textContent = quotes[index].author;
 });
+
+// scroll up button
+const $scrollUpBtn = document.querySelector("#scroll_up_btn");
+
+$scrollUpBtn.addEventListener("click", () => {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+});
