@@ -47,19 +47,19 @@ for (key in services) {
 // quotes section navigation
 const quotes = [
   {
-    text: "I worked with Mina on a web development project, and his attention to detail impressed me. I highly recommend his services.",
+    text: '"I worked with Mina on a web development project, and his attention to detail impressed me. I highly recommend his services."',
     author: "- Alice Johnson",
   },
   {
-    text: "Not only Mina completed the web project on time but also introduced creative solutions that enhanced the overall user experience.",
+    text: '"Not only Mina completed the web project on time but also introduced creative solutions that enhanced the overall user experience."',
     author: "- Adam Jackson",
   },
   {
-    text: "Working with Mina was a pleasure. His expertise in web development made a huge difference in the success of our project.",
+    text: '"Working with Mina was a pleasure. His expertise in web development made a huge difference in the success of our project."',
     author: "- Elizabeth Carlson",
   },
   {
-    text: "I was pleased with the work Mina did on our website. He understood our the requirements and brought fresh ideas to the table.",
+    text: '"I was pleased with the work Mina did on our website. He understood our the requirements and brought fresh ideas to the table."',
     author: "- Samson Daniels",
   },
 ];
