@@ -88,7 +88,6 @@ $quoteBtnRight.addEventListener("click", () => {
 // scroll up button
 const $scrollUpBtn = document.querySelector("#scroll_up_btn");
 
-$scrollUpBtn.addEventListener("click", () => {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+$scrollUpBtn.addEventListener("click", function () {
+  window.scrollTo({ top: 0, behavior: "smooth" });
 });
