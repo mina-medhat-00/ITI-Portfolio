@@ -87,7 +87,23 @@ $quoteBtnRight.addEventListener("click", () => {
 
 // scroll up button
 const $scrollUpBtn = document.querySelector("#scroll_up_btn");
+const $body = document.querySelector("body");
 
 $scrollUpBtn.addEventListener("click", function () {
   window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+// light and dark theme
+const $themeBtn = document.querySelector("#theme_btn");
+$themeBtn.addEventListener("click", () => {
+  console.log("clicked");
+  if ($themeBtn.firstChild.classList.contains("fa-moon")) {
+    $themeBtn.firstChild.classList.remove("fa-moon");
+    $themeBtn.firstChild.classList.add("fa-sun");
+    $body.classList.add("dark_mode");
+  } else {
+    $themeBtn.firstChild.classList.remove("fa-sun");
+    $themeBtn.firstChild.classList.add("fa-moon");
+    $body.classList.remove("dark_mode");
+  }
 });

@@ -9,6 +9,15 @@
   --white: #ffffff;
 }
 
+.dark_mode {
+  --background-color: #1e1e1e;
+  --dark-grey: #d1d1d1;
+  --grey: #a9a9a9;
+  --light-grey: #6e6e6e;
+  --black: #ffffff;
+  --white: #000000;
+}
+
 *,
 *::before,
 *::after {
@@ -50,6 +59,7 @@ button {
   cursor: pointer;
   background: none;
   border: none;
+  color: var(--black);
 }
 
 input,
@@ -59,6 +69,7 @@ textarea {
   font-size: 1.15rem;
   border: 2px solid var(--dark-grey);
   background-color: var(--white);
+  color: var(--black);
 }
 
 textarea {
@@ -147,21 +158,26 @@ nav button:hover {
 .x_large_text {
   font-size: 3rem;
   font-weight: 500;
+  color: var(--black);
 }
 
 .large_text {
   font-size: 1.5rem;
   font-weight: 500;
   margin-bottom: 1rem;
+  color: var(--black);
 }
+
 .medium_text {
   font-size: 1.15rem;
   font-weight: 500;
+  color: var(--black);
 }
 
 .small_text {
   font-size: 0.75rem;
   font-weight: 400;
+  color: var(--black);
 }
 
 /* hero */
